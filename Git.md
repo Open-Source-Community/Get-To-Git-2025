@@ -100,69 +100,53 @@ git branch --no-merged # TODO: Description
 git branch -d branchName # TODO: Description
 ```
 
-### Divergent History
+## Three-Way Merge (Basic Merge)
+- It’s called three ways, as Git does three things
 
-![[Pasted image 20231203092011.png]]
+1. ‌‌Finding the common ancestor of the two branches. This ancestor is called “merge base.”
 
-```
-git merge testing
-```
+2. Finding the last two snapshots.
 
->to graph logs | git log --oneline --decorate --graph --all
+3. Creating new commit that points to the last two snapshots
+
+[check slide for more information..](https://docs.google.com/presentation/d/1mpdb6fSgZReAFC5PF6FTrt59MWpsgK1TAfSs-vu5480/edit#slide=id.g30d6f0d6b0a_4_15)
+
+## Conflict merge
+- If you changed the same part of the same file in the two branches you’re merging, Git won’t be able to merge them cleanly. It will leave this task for you! 
+
+[check slide for more information and how to solve it..](https://docs.google.com/presentation/d/1mpdb6fSgZReAFC5PF6FTrt59MWpsgK1TAfSs-vu5480/edit#slide=id.g30d6f0d6b0a_4_27)
 
 
 
-### Working With Remote
+## Working With Remote
 
 ##### Clone
-Take a copy from original project directly and edit on the copy, then push or pull(fetch)
+Take a copy from original project directly into your local machine, then push or pull(fetch)
 
+```bash
+git clone url fileName 
+git remote add <url> writeName # adding more than one remote in your local repository
+
+git remote # TODO: Description
+git remote -v # TODO: Description
+git branch -r # TODO: Description
 ```
- git clone ./fileName/ writeName
- -> git clone then(url)
 
-git remote -> if origin that mean this repo from remote repo
+### Getting Update
 
-git remote -v -> to now where the remote-repo and from where this clone was taken
+```bash
+git fetch origin branchName # TODO: Description
+git merge # TODO: Description
 
-git branch -r > branches from origing
-
-git remote add <url> writeName -> more than one remote
-
-git fetch origin(of you have more one remote git name)   ->to git all updates from remote repo
-git merge -> merge updating
-
-git status -> to know if you update or not and differneces of computer
+git pull # TODO: Description
 ```
 
 `making branch in local repo and put in it`
 ⇾ git push -u `name of branch`
 ⇾ git branch --v
 
->making alias
->alias name=command
->alias graph="git log --online --all --graph --decorate"
-
-⇾ **push**
-```
- 
-```
-
-### GitHub
-**Push local repo to GitHub**
-- First (HTTPS)
-```
-git remote add origin url
-git branch -M main -> to rename master branch (from master to main)
-git push -u origin main(name of branch)-> to push repo
-
-
-
-
-```
-- Second (SSH)
-
-
-delete repo 
-rm -rf .git/
+### How make alias to help you
+```bash
+alias nameOfCommand="command"
+alias graph="git log --online --all --graph --decorate"
 ```
