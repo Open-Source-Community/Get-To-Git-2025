@@ -131,19 +131,23 @@ git remote # TODO: Description
 git remote -v # TODO: Description
 git branch -r # TODO: Description
 ```
+##### Tracking Remote Branches
+```bash
+git fetch # first get updates
+git checkout --track remoteName/branchName # track branch
 
+```
 ### Getting Update
 
 ```bash
 git fetch origin branchName # TODO: Description
 git merge # TODO: Description
 
+# Or Do
 git pull # TODO: Description
 ```
 
-`making branch in local repo and put in it`
-⇾ git push -u `name of branch`
-⇾ git branch --v
+
 
 ### How make alias to help you
 ```bash

@@ -15,7 +15,6 @@
 -----
 ## Contents
 - [Git basic commands](Git.md)
-- [what is License](OpenSource/what_is_License.md)
-- [What is open source projects](OpenSource/OpenSource.md)
-
+- [session1](slides/Get%20to%20Git%20-%20Session%201.pdf)
+- [session2](slides/Get%20To%20Git%20-%20Session%202.pdf)
 --------
