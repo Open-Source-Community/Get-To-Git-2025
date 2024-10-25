@@ -1,12 +1,7 @@
 ### All Submissions:
 
-* [ ] Have you followed the guidelines in our Contributing document?
-
-<!-- You can erase any parts of this template not applicable to your Pull Request. -->
-
-### New Feature Submissions:
-
-1. [ ] Does you solve just one?
+1. [ ] Have you followed the guidelines in our Contributing document?
+2. [ ] Does you solve just one?
 <!-- If no please edit your changes again and solve just one To leave chance for others -->
 
 ### Changes to Core Features:
